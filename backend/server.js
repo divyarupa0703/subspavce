@@ -12,7 +12,7 @@ app.use(express.json()); // For parsing application/json
 
 // Define the GraphQL endpoint and admin secret
 const endpoint = 'http://localhost:8080/v1/graphql'; // Your GraphQL endpoint URL
-const adminSecret = 'myadminsecretkey'; // Replace with your actual Hasura admin secret
+const adminSecret = 'your_admin_key'; // Replace with your actual Hasura admin secret
 
 const client = new GraphQLClient(endpoint, {
   headers: {
