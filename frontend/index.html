@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fintech App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Fintech App</h1>
+    
+    <!-- Login Form -->
+    <div class="form-container" id="login-form">
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Username">
+        <input type="password" id="login-password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <button onclick="showSignUpForm()">Sign Up</button>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div class="form-container hidden" id="signup-form">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="Username">
+        <input type="password" id="signup-password" placeholder="Password">
+        <input type="email" id="signup-email" placeholder="Email">
+        <button onclick="signUp()">Sign Up</button>
+        <button onclick="showLoginForm()">Back to Login</button>
+    </div>
+
+    <!-- Account Actions -->
+    <div class="form-container hidden" id="account-actions">
+        <h2>Account Actions</h2>
+        <button onclick="getAccountDetails()">Get Account Details</button>
+        <div class="account-details" id="account-details"></div>
+
+        <h3>Deposit</h3>
+        <input type="number" id="deposit-amount" placeholder="Amount">
+        <button onclick="deposit()">Deposit</button>
+
+        <h3>Withdraw</h3>
+        <input type="number" id="withdraw-amount" placeholder="Amount">
+        <button onclick="withdraw()">Withdraw</button>
+        <div class="logout-container">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
